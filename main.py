@@ -39,7 +39,9 @@ def func(message):
         button1 = types.KeyboardButton("Контакт в телеграме")
         button2 = types.KeyboardButton("Гитхаб")
         button3 = types.KeyboardButton("Вернуться обратно")
-        markup.add(button1, button2, button3)
+        markup.add(button1)
+        markup.add(button2)
+        markup.add(button3)
         bot.send_message(message.chat.id, text="Какой именно контакт вам нужен?", reply_markup=markup)
 
     elif message.text == "Гитхаб":
@@ -61,7 +63,9 @@ def func(message):
         btn1 = types.KeyboardButton("Хочу прогноз!")
         btn2 = types.KeyboardButton("❓ Контакты разработчика")
         btn3 = types.KeyboardButton("❓ Информация о прогнозах")
-        markup.add(btn1, btn2, btn3)
+        markup.add(btn1)
+        markup.add(btn2)
+        markup.add(btn3)
         bot.send_message(message.chat.id,
                          'Вы вернулись в главное меню!'.format(
                              message.from_user), reply_markup=markup)
