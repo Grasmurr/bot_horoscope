@@ -2,8 +2,8 @@ import telebot
 import requests
 from telebot import types
 from bs4 import BeautifulSoup as bs
-
-bot = telebot.TeleBot("5679259128:AAEFIMIWBar0IJhYyFsDQ5cEU48BATS1rEQ")
+from config import TOKEN
+bot = telebot.TeleBot(TOKEN)
 
 sait_goroskop = requests.get('https://74.ru/horoscope/daily/')
 soup = bs(sait_goroskop.text, 'lxml')
