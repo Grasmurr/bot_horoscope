@@ -3,6 +3,8 @@ import requests
 from telebot import types
 from bs4 import BeautifulSoup as bs
 from config import TOKEN
+
+
 bot = telebot.TeleBot(TOKEN)
 
 sait_goroskop = requests.get('https://74.ru/horoscope/daily/')
