@@ -1,0 +1,7 @@
+pytest
+wheel==0.37.1
+aiohttp>=3.8.0,<3.9.0
+pytelegrambotapi
+requests==2.28.1
+bs4
+Beautifulsoup4
